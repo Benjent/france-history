@@ -1,0 +1,6 @@
+@import '../mixins/palette.scss';
+
+.bar {
+    @include palette-chart('fill');
+    padding: 10px;
+}

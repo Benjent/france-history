@@ -1,0 +1,12 @@
+@import '../basics/colors.scss';
+@import '../mixins/cta.scss';
+
+.slate {
+    background: $grey;
+    color: black;
+    padding: 6px;
+
+    &--cta {
+        @include cta;
+    }
+}

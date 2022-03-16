@@ -1,0 +1,22 @@
+@import '../basics/colors.scss';
+
+.d3 {
+    &-axis {
+        fill: $chart;
+        color: $chart;
+    }
+
+    &-text {
+        fill: $white;
+    }
+
+    &-tooltip {
+        position: absolute;
+    }
+
+    .tick {
+        line {
+            fill: $chart;
+        }
+    }
+}

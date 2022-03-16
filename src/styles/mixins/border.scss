@@ -1,0 +1,7 @@
+@mixin border($side: null, $color) {
+    @if $side {
+        border-#{side}: solid 1px $color;
+    } @else {
+        border: solid 1px $color;
+    }
+}

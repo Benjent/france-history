@@ -1,0 +1,7 @@
+@mixin border-radius($side: null, $size: 6px) {
+    @if $side == top{
+        // border-#{side}: solid 1px $color;
+    } @else {
+        border-radius: $size;
+    }
+}
