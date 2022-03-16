@@ -1,0 +1,130 @@
+const regimes = [
+    {
+        content: 'Monarchie féodale',
+        start: '0481-01-01',
+        end: '0737-01-01',
+        color: 'purple',
+    },
+    {
+        content: 'Monarchie féodale',
+        start: '0743-02-15',
+        end: '0800-12-25',
+        color: 'purple',
+    },
+    {
+        content: 'Empire',
+        start: '0800-12-25',
+        end: '0924-04-07',
+        color: 'green',
+    },
+    {
+        content: 'Monarchie féodale',
+        start: '0924-04-07',
+        end: '1610-05-14',
+        color: 'purple',
+    },
+    {
+        content: 'Régence',
+        start: '1610-05-14',
+        end: '1617-04-24',
+        color: 'purple',
+    },
+    {
+        content: 'Monarchie absolue',
+        start: '1617-04-24',
+        end: '1643-05-14',
+        color: 'purple',
+    },
+    {
+        content: 'Régence',
+        start: '1643-05-14',
+        end: '1651-09-07',
+        color: 'purple',
+    },
+    {
+        content: 'Monarchie absolue',
+        start: '1651-09-07',
+        end: '1715-09-01',
+        color: 'purple',
+    },
+    {
+        content: 'Régence',
+        start: '1715-09-01',
+        end: '1723-12-02',
+        color: 'purple',
+    },
+    {
+        content: 'Monarchie absolue',
+        start: '1723-12-02',
+        end: '1791-09-04',
+        color: 'purple',
+    },
+    {
+        content: 'Monarchie constitutionnelle',
+        start: '1791-09-04',
+        end: '1792-09-21',
+        color: 'purple',
+    },
+    {
+        content: 'République',
+        start: '1792-09-21',
+        end: '1804-05-18',
+        color: 'blue',
+    },
+    {
+        content: 'Empire',
+        start: '1804-05-18',
+        end: '1814-04-14',
+        color: 'green',
+    },
+    {
+        content: 'Monarchie',
+        start: '1814-04-06',
+        end: '1815-03-20',
+        color: 'purple',
+    },
+    {
+        content: 'Monarchie',
+        start: '1815-07-08',
+        end: '1830-08-02',
+        color: 'purple',
+    },
+    {
+        content: 'Monarchie',
+        start: '1830-08-09',
+        end: '1848-02-24',
+        color: 'purple',
+    },
+    {
+        content: 'République',
+        start: '1848-02-24',
+        end: '1852-12-02',
+        color: 'blue',
+    },
+    {
+        content: 'Empire',
+        start: '1852-12-02',
+        end: '1870-09-04',
+        color: 'green',
+    },
+    {
+        content: 'République',
+        start: '1870-09-04',
+        end: '1940-07-10',
+        color: 'blue',
+    },
+    {
+        content: 'Dictature',
+        start: '1940-07-10',
+        end: '1944-08-20',
+        color: 'black',
+    },
+    {
+        content: 'République',
+        start: '1944-06-03',
+        end: '2022-05-13',
+        color: 'blue',
+    },
+]
+
+export default regimes
