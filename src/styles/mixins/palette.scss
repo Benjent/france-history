@@ -1,0 +1,17 @@
+@import '../basics/colors.scss';
+
+$colors-chart: (
+    'blue': $blue,
+    'green': $green,
+    'purple': $purple,
+    'red': $red,
+    'white': $white,
+);
+
+@mixin palette-chart($property: 'background') {
+    @each $name, $color in $colors-chart {
+        &--#{$name}, &#{&}--#{$name} {
+            #{$property}: $color;
+        }
+    }
+}

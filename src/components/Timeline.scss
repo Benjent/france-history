@@ -1,0 +1,15 @@
+@import '../styles/basics/colors.scss';
+
+.Timeline {
+    &__header {
+
+    }
+
+    &__body {
+        overflow-x: scroll;
+    }
+
+    &__footer {
+        
+    }
+}

@@ -1,0 +1,10 @@
+@import '../basics/colors.scss';
+@import '../mixins/border.scss';
+@import '../mixins/border-radius.scss';
+
+.input {
+    @include border($color: $blue);
+    @include border-radius();
+    background: $white;
+    padding: 10px 16px;
+}

@@ -1,0 +1,17 @@
+.Eras {
+    // display: grid;
+    // grid-template-columns: repeat(5, 1fr);
+    // grid-gap: 10px;
+    // grid-auto-rows: minmax(10px, auto);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+
+    &__era {
+        $nbPerRow: 5;
+        width: 100% / $nbPerRow;
+        margin: 10px;
+    }
+}

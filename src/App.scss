@@ -1,0 +1,15 @@
+@import './styles/basics/colors.scss';
+@import './styles/mixins/theme.scss';
+
+.App {
+    @include theme;
+    text-align: center;
+    background: $background;
+    color: $white;
+    min-width: 100vw;
+    min-height: 100vh;
+
+    &__eras {
+        margin-bottom: 20px;
+    }
+}
