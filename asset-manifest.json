@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/france-history/static/css/main.92de6f82.css",
+    "main.js": "/france-history/static/js/main.8c3416ef.js",
+    "static/js/787.d8a3259b.chunk.js": "/france-history/static/js/787.d8a3259b.chunk.js",
+    "index.html": "/france-history/index.html",
+    "main.92de6f82.css.map": "/france-history/static/css/main.92de6f82.css.map",
+    "main.8c3416ef.js.map": "/france-history/static/js/main.8c3416ef.js.map",
+    "787.d8a3259b.chunk.js.map": "/france-history/static/js/787.d8a3259b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92de6f82.css",
+    "static/js/main.8c3416ef.js"
+  ]
+}
