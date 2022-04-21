@@ -1,5 +1,11 @@
 const eras = [
     {
+        content: `Gaule romaine (Empire Romain d'Occident)`,
+        start: '0001-01-01', // TODO Actually before that
+        end: '0481-01-01',
+        color: 'orange',
+    },
+    {
         content: 'Mérovingiens',
         start: '0481-01-01',
         end: '0751-11-01',

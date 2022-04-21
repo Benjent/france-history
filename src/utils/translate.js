@@ -4,7 +4,6 @@ function translate(word) {
         eras: 'ères',
         events: 'évènements',
         governances: 'gouvernances',
-        movements: 'mouvements',
         regimes: 'régimes',
         wars: 'guerres',
     }

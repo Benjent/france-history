@@ -1,0 +1,63 @@
+@import '../styles/mixins/palette.scss';
+
+.Dive {
+    display: flex;
+
+    &__aside {
+        width: 20%;
+        border-right: solid 1px grey;
+
+        &__column {
+            @for $i from 1 through 7 {
+                &:nth-child(#{$i}) {
+                    margin-left: calc(#{$i} * 10px);
+                }
+            }
+
+            &__content {
+                position: sticky;
+                z-index: 1;
+                top: 0;
+                width: calc(0.2 * 100vw); // Make text flow up to the aside width (20% of the screen width)
+                white-space: nowrap;
+
+                @for $i from 1 through 5 {
+                    &--#{$i} {
+                        top: #{$i}em; // Add padding so that texts from different categories don't overlap
+                    }
+                }
+            }
+
+            &__image {
+                max-height: 100px;
+                max-width: 60px;
+            }
+        }
+
+        &__bar {
+            @include palette-chart('background');
+            width: 10px;
+            background: $green;
+        }
+    }
+
+    &__axis {
+        width: 50px;
+    }
+
+    &__event {
+        // position: sticky;
+    }
+
+    &__buttonPrevious {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+    
+    &__buttonNext {
+        position: fixed;
+        top: 40px;
+        right: 20px;
+    }
+}

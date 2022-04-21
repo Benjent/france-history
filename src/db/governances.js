@@ -1,6 +1,28 @@
 // TODO on pourrait mettre 00 quand la date est inconnue
 const governances = [
     {
+        content: 'Clodion',
+        start: '0428-01-01',
+        end: '0450-01-01',
+    },
+    {
+        content: 'Mérovée', // TODO pas sûr de l'existence
+        start: '0450-01-01',
+        end: '0457-01-01',
+    },
+    {
+        content: 'Childéric',
+        start: '0457-01-01',
+        end: '0481-01-01',
+    },
+    {
+        content: 'Clovis',
+        start: '0481-01-01',
+        end: '0511-11-27',
+        figure: 'clovis.jpg',
+    },
+    // TODO Fill with missing kings
+    {
         content: 'Thierry III',
         start: '0679-01-01',
         end: '0691-01-01',
@@ -299,161 +321,193 @@ const governances = [
         content: 'Louis-Napoléon Bonaparte',
         start: '1848-02-24',
         end: '1870-09-04',
+        figure: 'louis_napoleon_bonaparte.jpg',
     },
     {
         content: 'Adolphe Thiers',
         start: '1871-08-31',
         end: '1873-05-24',
+        figure: 'adolphe_thiers.jpg',
     },
     {
         content: 'Patrice de Mac Mahon',
         start: '1873-05-24',
         end: '1879-01-30',
+        figure: 'patrice_de_mac_mahon.jpg',
     },
     {
         content: 'Jules Grévy',
         start: '1879-01-30',
         end: '1887-12-02',
+        figure: 'jules_grevy.jpg',
     },
     {
         content: 'Sadi Carnot',
         start: '1887-12-03',
         end: '1894-06-25',
+        figure: 'sadi_carnot.jpg',
     },
     {
         content: 'Jean Casimir-Perier',
         start: '1894-06-27',
         end: '1895-01-16',
+        figure: 'jean_casimir_perier.jpg',
     },
     {
         content: 'Félix Faure',
         start: '1895-01-17',
         end: '1899-02-16',
+        figure: 'felix_faure.jpg',
     },
     {
         content: 'Émile Loubet',
         start: '1899-02-18',
         end: '1906-02-18',
+        figure: 'emile_loubet.jpg',
     },
     {
         content: 'Armand Fallières',
         start: '1906-02-18',
         end: '1913-02-18',
+        figure: 'armand_fallieres.jpg',
     },
     {
         content: 'Raymond Poincaré',
         start: '1913-02-18',
         end: '1920-02-18',
+        figure: 'raymond_poincarre.jpg',
     },
     {
         content: 'Paul Deschanel',
         start: '1920-02-18',
         end: '1920-09-21',
+        figure: 'paul_deschanel.jpg',
     },
     {
         content: 'Alexandre Millerand',
         start: '1920-09-23',
         end: '1924-06-11',
+        figure: 'alexandre_millerand.jpg',
     },
     {
         content: 'Gaston Doumergue',
         start: '1924-06-13',
         end: '1931-06-13',
+        figure: 'gaston_doumergue.jpg',
     },
     {
         content: 'Paul Doumer',
         start: '1931-06-13',
         end: '1932-05-07',
+        figure: 'paul_doumer.jpg',
     },
     {
         content: 'Albert Lebrun',
         start: '1932-05-10',
         end: '1940-07-11',
+        figure: 'albert_lebrun.jpg',
     },
     {
         content: 'Philippe Pétain',
         start: '1940-07-11',
         end: '1944-08-20',
+        figure: 'philippe_petain.jpg',
     },
     {
         content: 'Charles de Gaulle',
         start: '1944-09-10',
         end: '1946-01-20',
+        figure: 'charles_de_gaulle.jpg',
     },
     {
         content: 'Félix Gouin',
         start: '1946-01-26',
         end: '1946-06-12',
+        figure: 'felix_gouin.jpg',
     },
     {
         content: 'Georges Bidault',
         start: '1946-06-24',
         end: '1946-11-28',
+        figure: 'georges_bidault.jpg',
     },
     {
         content: 'Léon Blum',
         start: '1946-12-16',
         end: '1947-01-16',
+        figure: 'leon_blum.jpg',
     },
     {
         content: 'Vincent Auriol',
         start: '1947-01-16',
         end: '1954-01-16',
+        figure: 'vincent_auriol.jpg',
     },
     {
         content: 'René Coty',
         start: '1954-01-16',
         end: '1959-01-08',
+        figure: 'rene_coty.jpg',
     },
     {
         content: 'Charles de Gaulle',
         start: '1959-01-08',
         end: '1969-04-28',
+        figure: 'charles_de_gaulle.jpg',
     },
     {
         content: 'Alain Poher',
         start: '1969-04-28',
         end: '1969-06-20',
+        figure: 'alain_poher.jpg',
     },
     {
         content: 'Georges Pompidou',
         start: '1969-06-20',
         end: '1974-04-02',
+        figure: 'georges_pompidou.jpg',
     },
     {
         content: 'Alain Poher',
         start: '1974-04-02',
         end: '1974-05-27',
+        figure: 'alain_poher.jpg',
     },
     {
         content: `Valéry Giscard d'Estaing`,
         start: '1974-05-27',
         end: '1981-05-21',
+        figure: 'valery_giscard_destaing.jpg',
     },
     {
         content: 'François Mitterand',
         start: '1981-05-21',
         end: '1995-05-17',
+        figure: 'francois_mitterand.jpg',
     },
     {
         content: 'Jacques Chirac',
         start: '1995-05-17',
         end: '2007-05-16',
+        figure: 'jacques_chirac.jpg',
     },
     {
         content: 'Nicolas Sarkozy',
         start: '2007-05-16',
         end: '2012-05-15',
+        figure: 'nicolas_sarkozy.jpg',
     },
     {
         content: 'François Hollande',
         start: '2012-05-15',
         end: '2017-05-14',
+        figure: 'francois_hollande.jpeg',
     },
     {
         content: 'Emmanuel Macron',
         start: '2017-05-14',
         end: '2022-05-13',
+        figure: 'emmanuel_macron.jpg',
     },
 ]
 

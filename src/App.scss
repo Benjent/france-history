@@ -3,10 +3,9 @@
 
 .App {
     @include theme;
-    text-align: center;
     background: $background;
     color: $white;
-    min-width: 100vw;
+    // min-width: 100vw;
     min-height: 100vh;
 
     &__eras {

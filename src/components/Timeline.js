@@ -1,21 +1,20 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'
 import { useDebounce } from 'use-lodash-debounce'
-import * as d3 from 'd3';
+import * as d3 from 'd3'
 
-import annexations from '../db/annexations';
-import eras from '../db/eras';
-import events from '../db/events';
+import annexations from '../db/annexations'
+import eras from '../db/eras'
+import events from '../db/events'
 import governances from '../db/governances'
-import movements from '../db/movements';
-import regimes from '../db/regimes';
+import regimes from '../db/regimes'
 import wars from '../db/wars'
 
 import dayjs from '../utils/dayjs-fr'
 import translate from '../utils/translate'
 import { useD3 } from '../hooks/useD3'
 
-import Checkbox from '../components/ui/Checkbox';
-import Input from '../components/ui/Input';
+import Checkbox from '../components/ui/Checkbox'
+import Input from '../components/ui/Input'
 
 import './Timeline.scss'
 import '../styles/modules/bar.scss'
@@ -53,11 +52,6 @@ function Timeline() {
             isShown: true,
             data: wars,
             order: 5,
-        },
-        movements: {
-            isShown: true,
-            data: movements,
-            order: 6,
         },
         events: {
             isShown: true,
