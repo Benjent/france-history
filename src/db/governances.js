@@ -506,7 +506,7 @@ const governances = [
     {
         content: 'Emmanuel Macron',
         start: '2017-05-14',
-        end: '2022-05-13',
+        end: 'today',
         figure: 'emmanuel_macron.jpg',
     },
 ]

@@ -5,6 +5,10 @@ const getManipulableDate = (date) => {
         return dayjs()
     }
 
+    if (date === 'today') {
+        return dayjs()
+    }
+
     if (typeof date === 'object') {
         return date
     }
