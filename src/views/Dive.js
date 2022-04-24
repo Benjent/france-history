@@ -14,8 +14,6 @@ import wars from '../db/wars'
 
 import './Dive.scss'
 
-const images = require.context('../assets/images', true)
-
 function Dive() {
     const dateMin = dateUtils.getManipulableDate('0001-01-01')
     const dateMax = dayjs()
@@ -142,6 +140,7 @@ function Dive() {
                                 {g.figure && (
                                     <img
                                         src={require(`../assets/images/${g.figure}`)}
+                                        alt={g.content}
                                         className="Dive__aside__column__image Dive__aside__column__content"
                                     />
                                 )}
