@@ -34,6 +34,11 @@ const annexations = [
         start: '0673-12-31',
         end: '0673-12-31',
     },
+    {
+        content: 'Partage du royaume des Francs en 3 : royaume de Charles II, Royaume de Lothaire, Royaume de Louis II',
+        start: '0843-08-01',
+        end: '0843-08-01',
+    },
 ]
 
 export default annexations

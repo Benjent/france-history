@@ -15,6 +15,7 @@ import wars from '../db/wars'
 import annexations from '../db/annexations'
 import events from '../db/events'
 import laws from '../db/laws'
+import treaties from '../db/treaties'
 
 import './Dive.scss'
 
@@ -131,6 +132,10 @@ function Dive() {
 
     }, 100))
 
+    const getEventKey = (prefix, index, event) => {
+        return `${prefix}_${index}_${event.start}_${event.end}`
+    }
+
     return (
         <div
             className="Dive"
@@ -146,21 +151,21 @@ function Dive() {
                                 [`Dive__aside__bar--${e.color}`]: e.color,
                             })}
                             style={getEventStyle(e)}
-                            key={`era${e.start}`}
+                            key={getEventKey('era', i, e)}
                             >
                             <div className="Dive__aside__column__content">{e.content}</div>
                         </div>
                     )}
                 </div>
                 <div className="Dive__aside__column">
-                    {regimes.map((r) =>
+                    {regimes.map((r, i) =>
                         <div
                             className={classNames({
                                 'Dive__aside__bar': true,
                                 [`Dive__aside__bar--${r.color}`]: r.color,
                             })}
                             style={getEventStyle(r)}
-                            key={`regime${r.start}`}
+                            key={getEventKey('regime', i, r)}
                             >
                             <div className={classNames({
                                 'Dive__aside__column__content': true,
@@ -177,7 +182,7 @@ function Dive() {
                                 [`Dive__aside__bar--${g.color}`]: g.color,
                             })}
                             style={getEventStyle(g)}
-                            key={`governance${g.start}_${i}`}
+                            key={getEventKey('governance', i, g)}
                             >
                             <div className={classNames({
                                 'Dive__aside__column__content': true,
@@ -204,7 +209,7 @@ function Dive() {
                                 [`Dive__aside__bar--${w.color}`]: w.color,
                             })}
                             style={getEventStyle(w)}
-                            key={`war${w.start}_${i}`}
+                            key={getEventKey('war', i, w)}
                             >
                             <div className={classNames({
                                 'Dive__aside__column__content': true,
@@ -222,7 +227,7 @@ function Dive() {
                                 [`Dive__aside__bar--${b.color}`]: b.color,
                             })}
                             style={getEventStyle(b)}
-                            key={`battle${b.start}_${i}`}
+                            key={getEventKey('battle', i, b)}
                             >
                             <div className={classNames({
                                 'Dive__aside__column__content': true,
@@ -236,17 +241,18 @@ function Dive() {
                 {axisDates.map((d) =>
                     <div
                         style={getAxisStyle(d)}
+                        key={`axis_${d}`}
                         >
                         - {d}
                     </div>
                 )}
             </div>
             <main>
-                {[...annexations, ...events, ...laws].map((e) =>
+                {[...annexations, ...events, ...laws, ...treaties].map((e, i) =>
                     <div
                         className="Dive__event"
                         style={getEventStyle(e)}
-                        key={`event${e.start}`}
+                        key={getEventKey('event', i, e)}
                         >
                         <div>{e.content}</div>
                         {/* <div className="period">{formatUtils.frDate(e.start)} - {formatUtils.frDate(e.end)}</div> */}

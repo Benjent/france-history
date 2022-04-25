@@ -1,16 +1,36 @@
 const laws = [
     {
-        content: 'Confirmation de la liberté de culte des chrétiens',
+        content: 'Table Claudienne : extension de la romanisation', // TODO précision
+        start: '0048-01-01',
+        end: '0048-01-01',
+    },
+    {
+        content: 'Édit de Domitien : limitation des vignobles gaulois',
+        start: '0092-01-01',
+        end: '0092-01-01',
+    },
+    {
+        content: "Édit de l'empereur Caracalla : extension de la romanisation", // TODO précision
+        start: '0212-01-01',
+        end: '0212-01-01',
+    },
+    {
+        content: "Édit de Probus : suppression de la limitation des vignobles gaulois",
+        start: '0276-01-01',
+        end: '0276-01-01',
+    },
+    {
+        content: 'Édit de Milan : confirmation de la liberté de culte des chrétiens',
         start: '0313-06-13',
         end: '0313-06-13',
     },
     {
-        content: 'Interdiction du culte païen',
+        content: 'Édit de Théodose : interdiction du culte païen',
         start: '0381-12-20',
         end: '0381-12-20',
     },
     {
-        content: 'Interdiction de toute manifestation de culte païen',
+        content: 'Édit de Constantinople : interdiction de toute manifestation de culte païen',
         start: '0392-11-08',
         end: '0392-11-08',
     },
