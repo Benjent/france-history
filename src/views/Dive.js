@@ -1,16 +1,20 @@
-import React from 'react'
+import throttle from 'lodash/throttle'
 import classNames from 'classnames'
 
 import dayjs from '../utils/dayjs-fr'
 import dateUtils from '../utils/date'
 
-import annexations from '../db/annexations'
+// Periods
 import battles from '../db/battles'
 import eras from '../db/eras'
-import events from '../db/events'
 import governances from '../db/governances'
 import regimes from '../db/regimes'
 import wars from '../db/wars'
+
+// Events
+import annexations from '../db/annexations'
+import events from '../db/events'
+import laws from '../db/laws'
 
 import './Dive.scss'
 
@@ -84,6 +88,49 @@ function Dive() {
         }
     }
 
+    window.addEventListener('scroll', throttle(() => {
+        const governanceNodes = [...document.querySelectorAll('.Dive__aside__column__content--governance')]
+        const warNodes = [...document.querySelectorAll('.Dive__aside__column__content--war')]
+        const lineHeight = 16
+        const governanceOrder = 3
+        const governanceStickPosition = governanceOrder * lineHeight
+        const warOrder = 4
+        const warStickPosition = warOrder * lineHeight
+        const spacing = 10
+        const stickedGovernanceNodes = governanceNodes.filter((n) => {
+            return n.getBoundingClientRect().y === governanceStickPosition
+        })
+        stickedGovernanceNodes.forEach((n, i) => {
+            if (i > 0) {
+                n.style.paddingLeft = `${stickedGovernanceNodes[i - 1].getBoundingClientRect().width + spacing}px`
+            }
+        })
+
+        const governanceNodesToUnshift = governanceNodes.filter((n) => {
+            return n.getBoundingClientRect().y !== governanceStickPosition && n.style.paddingLeft !== '0px'
+        })
+        governanceNodesToUnshift.forEach((n) => {
+            n.style.paddingLeft = '0px'
+        })
+
+        const stickedWarNodes = warNodes.filter((n) => {
+            return n.getBoundingClientRect().y === warStickPosition
+        })
+        stickedWarNodes.forEach((n, i) => {
+            if (i > 0) {
+                n.style.paddingLeft = `${stickedWarNodes[i - 1].getBoundingClientRect().width + spacing}px`
+            }
+        })
+
+        const warNodesToUnshift = warNodes.filter((n) => {
+            return n.getBoundingClientRect().y !== warStickPosition && n.style.paddingLeft !== '0px'
+        })
+        warNodesToUnshift.forEach((n) => {
+            n.style.paddingLeft = '0px'
+        })
+
+    }, 100))
+
     return (
         <div
             className="Dive"
@@ -134,6 +181,7 @@ function Dive() {
                             >
                             <div className={classNames({
                                 'Dive__aside__column__content': true,
+                                'Dive__aside__column__content--governance': true,
                                 [`Dive__aside__column__content--3`]: true,
                             })}>
                                 <span>{g.content}</span>
@@ -160,6 +208,7 @@ function Dive() {
                             >
                             <div className={classNames({
                                 'Dive__aside__column__content': true,
+                                'Dive__aside__column__content--war': true,
                                 [`Dive__aside__column__content--4`]: true,
                             })}>{w.content}</div>
                         </div>
@@ -193,7 +242,7 @@ function Dive() {
                 )}
             </div>
             <main>
-                {[...annexations, ...events].map((e) =>
+                {[...annexations, ...events, ...laws].map((e) =>
                     <div
                         className="Dive__event"
                         style={getEventStyle(e)}

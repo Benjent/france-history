@@ -18,8 +18,11 @@
                 position: sticky;
                 z-index: 1;
                 top: 0;
-                width: calc(0.2 * 100vw); // Make text flow up to the aside width (20% of the screen width)
+                // width: calc(0.2 * 100vw); // Make text flow up to the aside width (20% of the screen width)
+                width: max-content; // To access boundingClientRect through JS
+                padding-left: 0;
                 white-space: nowrap;
+                transition: padding 0.2s;
 
                 @for $i from 1 through 5 {
                     &--#{$i} {
