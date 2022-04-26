@@ -75,6 +75,11 @@ const events = [
         end: '1431-05-30',
     },
     {
+        content: `Congrès de Vienne`,
+        start: '1814-09-18',
+        end: '1815-06-09',
+    },
+    {
         content: `Condamnation d'Alfred Dreyfus`,
         start: '1894-12-22',
         end: '1894-12-22',
@@ -83,6 +88,16 @@ const events = [
         content: `Publication de "J'accuse...!" par Émile Zola`,
         start: '1898-01-13',
         end: '1898-01-13',
+    },
+    {
+        content: "Création de l'Organisation des Nations unies",
+        start: '1945-10-24',
+        end: '1945-10-24',
+    },
+    {
+        content: "Organisation du traité de l'Atlantique Nord",
+        start: '1949-04-04',
+        end: '1949-04-04',
     },
     {
         content: 'Mai 68',

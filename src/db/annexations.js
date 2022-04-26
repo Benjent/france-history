@@ -45,6 +45,16 @@ const annexations = [
         end: '1766-02-23',
     },
     {
+        content: "Perte de la majorité de la Nouvelle-France",
+        start: '1763-02-10',
+        end: '1763-02-10',
+    },
+    {
+        content: "Récupération de Saint-Pierre-et-Miquelon",
+        start: '1763-02-10',
+        end: '1763-02-10',
+    },
+    {
         content: "Annexion de la Corse",
         start: '1769-05-09',
         end: '1769-05-09',
@@ -70,9 +80,19 @@ const annexations = [
         end: '1797-10-18',
     },
     {
+        content: "Annexion des provinces illyriennes",
+        start: '1809-10-14',
+        end: '1809-10-14',
+    },
+    {
         content: "Achat de la Mayotte",
         start: '1841-04-25',
         end: '1841-04-25',
+    },
+    {
+        content: "Indépendance de Haïti",
+        start: '1804-01-01',
+        end: '1804-01-01',
     },
     {
         content: "Annexion de la Savoie et du comté de Nice",
@@ -80,9 +100,79 @@ const annexations = [
         end: '1860-03-24',
     },
     {
-        content: "Annexion de l'Alsace-Moselle'",
+        content: "Colonisation de la Cochinchine",
+        start: '1862-06-05',
+        end: '1862-06-05',
+    },
+    {
+        content: "Colonisation de la Tunisie",
+        start: '1881-10-28',
+        end: '1881-10-28',
+    },
+    {
+        content: "Colonisation du Tonkin et de l'Annam",
+        start: '1883-08-25',
+        end: '1883-08-25',
+    },
+    {
+        content: "Colonisation de Madagascar",
+        start: '1885-12-17',
+        end: '1885-12-17',
+    },
+    {
+        content: "Colonisation du Dahomey",
+        start: '1890-10-04',
+        end: '1890-10-04',
+    },
+    {
+        content: "Colonisation du Laos",
+        start: '1883-10-03',
+        end: '1883-10-03',
+    },
+    {
+        content: "Annexion du Dahomey",
+        start: '1894-01-15',
+        end: '1894-01-15',
+    },
+    {
+        content: "Annexion de Madagascar",
+        start: '1896-08-06',
+        end: '1896-08-06',
+    },
+    {
+        content: "Colonisation de l'Algérie",
+        start: '1902-05-07',
+        end: '1902-05-07',
+    },
+    {
+        content: "Annexion de l'Alsace-Moselle",
         start: '1919-06-28',
         end: '1919-06-28',
+    },
+    {
+        content: "Colonisation du Maroc",
+        start: '1934-12-31',
+        end: '1934-12-31',
+    },
+    {
+        content: "Indépendance du Cameroun",
+        start: '1960-01-01',
+        end: '1960-01-01',
+    },
+    {
+        content: "Indépendance du Dahomey",
+        start: '1960-08-01',
+        end: '1960-08-01',
+    },
+    {
+        content: "Indépendance du Tchad",
+        start: '1960-08-11',
+        end: '1960-08-11',
+    },
+    {
+        content: "Indépendance de l'Algérie",
+        start: '1967-07-05',
+        end: '1967-07-05',
     },
 ]
 

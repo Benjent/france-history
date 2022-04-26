@@ -69,6 +69,11 @@ const territories = [
         start: '1793-08-01', // TODO jour exact
         end: '1793-08-01',
     },
+    {
+        content: "Création de l'Indochine",
+        start: '1887-10-17',
+        end: '1887-10-17',
+    },
 ]
 
 export default territories
