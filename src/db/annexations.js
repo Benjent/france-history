@@ -35,9 +35,19 @@ const annexations = [
         end: '0673-12-31',
     },
     {
-        content: 'Partage du royaume des Francs en 3 : royaume de Charles II, Royaume de Lothaire, Royaume de Louis II',
+        content: 'Partage du royaume des Francs en 3 : royaume de Charles II, royaume de Lothaire, royaume de Louis II',
         start: '0843-08-01',
         end: '0843-08-01',
+    },
+    {
+        content: "Annexion du Poitou",
+        start: '1226-12-31',
+        end: '1226-12-31',
+    },
+    {
+        content: "Annexion de la Normandie, de la Saintonge, de l'Angoumois et de l'Auvergne",
+        start: '1259-10-13',
+        end: '1259-10-13',
     },
 ]
 
