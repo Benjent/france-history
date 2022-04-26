@@ -15,6 +15,7 @@ import wars from '../db/wars'
 import annexations from '../db/annexations'
 import events from '../db/events'
 import laws from '../db/laws'
+import territories from '../db/territories'
 import treaties from '../db/treaties'
 
 import './Dive.scss'
@@ -248,7 +249,7 @@ function Dive() {
                 )}
             </div>
             <main>
-                {[...annexations, ...events, ...laws, ...treaties].map((e, i) =>
+                {[...annexations, ...events, ...laws, ...territories, ...treaties].map((e, i) =>
                     <div
                         className="Dive__event"
                         style={getEventStyle(e)}

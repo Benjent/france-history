@@ -40,6 +40,16 @@ const laws = [
         end: '0507-01-01',
     },
     {
+        content: `Édit de Nantes : union de la Bretagne à la France`,
+        start: '1532-08-13',
+        end: '1532-08-13',
+    },
+    {
+        content: `Édit de Plessis-Macé : confirmation de l'édit de Nantes et protection de privilèges bretons`,
+        start: '1532-09-21',
+        end: '1532-09-21',
+    },
+    {
         content: `Interdiction de l'emploi des mineurs de moins de 8 ans`,
         start: '1841-03-22',
         end: '1841-03-22',
