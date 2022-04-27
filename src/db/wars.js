@@ -405,7 +405,7 @@ const wars = [
         end: '1783-04-11',
     },
     {
-        content: `Guerre d'indépendance des États-Unis`,
+        content: `Guerre franco-anglaise`,
         start: '1778-06-01',
         end: '1783-09-30',
     },
